@@ -68,7 +68,7 @@ jobs:
     - name: Push Docker Image
       run: docker push ranjitrupnawar/boardgame:latest
 
-      - name: Kubectl Action
+    - name: Kubectl Action
         uses: tale/kubectl-action@v1
         with:
         base64-kube-config: ${{ secrets.KUBE_CONFIG }}
